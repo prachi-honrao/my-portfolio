@@ -117,6 +117,6 @@ const eduObserver = new IntersectionObserver((entries) => {
             }, i * 180);
         }
     });
-}, { threshold: 0.20 });
+}, { threshold: 0.30 });
 
 eduItems.forEach(item => eduObserver.observe(item));
