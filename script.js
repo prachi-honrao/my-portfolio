@@ -114,9 +114,9 @@ const eduObserver = new IntersectionObserver((entries) => {
         if (entry.isIntersecting) {
             setTimeout(() => {
                 entry.target.classList.add('visible');
-            }, i * 180);
+            }, i * 220);
         }
     });
-}, { threshold: 0.30 });
+}, { threshold: 0.15 });
 
 eduItems.forEach(item => eduObserver.observe(item));
