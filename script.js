@@ -1,5 +1,5 @@
 window.addEventListener("scroll", () => {
-    if (window.scrollY >= 1700) {
+    if (window.scrollY >= 1650) {
         document.querySelector(".first").classList.remove("hidden-box");
         document.querySelector(".first").classList.add("animate-first");
 
