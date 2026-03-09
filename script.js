@@ -40,7 +40,6 @@ if (contactForm) {
         const submitBtn = document.getElementById("submit-btn");
         if (!statusEl || !submitBtn) return;
 
-        // Validate: all fields are required
         const name = (contactForm.querySelector('[name="name"]') || {}).value.trim();
         const email = (contactForm.querySelector('[name="email"]') || {}).value.trim();
         const message = (contactForm.querySelector('[name="message"]') || {}).value.trim();
@@ -109,8 +108,6 @@ if (contactForm) {
         submitBtn.textContent = originalText;
     });
 }
-
-// Education timeline scroll animation
 const eduItems = document.querySelectorAll('.edu-item');
 const eduObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry, i) => {
